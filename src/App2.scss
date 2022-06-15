@@ -1,0 +1,49 @@
+:root{
+  --each10 : #0000ff;
+  --each5 : #6666ff;
+  --each1 : #ccccff;
+}
+
+.tool{
+  position: relative;
+}
+
+.border{
+  display: block;
+  border: 1px solid red;
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  box-sizing: border-box;
+}
+
+.line{
+  display: flex;
+  margin-left: -2px;
+}
+
+.line:nth-child(10n) .square{
+  border-bottom-color: var(--each10);
+}
+
+.line:nth-child(10n + 5) .square{
+  border-bottom-color: var(--each5);
+}
+
+
+.square{
+  border-left: 1px solid;
+  border-left-color: var(--each1);
+  border-bottom: 1px solid;
+  border-bottom-color: var(--each1);
+  border-collapse: collapse;
+}
+
+.square:nth-child(10n + 1){
+  border-left-color: var(--each10);
+}
+
+
+.square:nth-child(10n + 6){
+  border-left-color: var(--each5);
+}

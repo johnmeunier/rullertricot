@@ -1,0 +1,49 @@
+.tool{
+  position: relative;
+}
+
+.border{
+  display: block;
+  border: 1px solid red;
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  box-sizing: border-box;
+}
+
+.line, .subLine{
+  display: flex;
+}
+
+.line, .subLine{
+  margin-left: -1px;
+}
+
+.subLine{
+  &:last-child{
+    .subSquare{
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+.square, .subSquare{
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+  border-collapse: collapse;
+  &:first-child{
+    border-left: none;
+  }
+  &:last-child{
+    border-right: none;
+  }
+}
+
+.square{
+  border-color: blue;
+}
+
+.subSquare{
+  border-color: cyan;
+  box-sizing: border-box;
+}
