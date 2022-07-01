@@ -37,6 +37,7 @@
   border-bottom: 1px solid;
   border-bottom-color: var(--each1);
   border-collapse: collapse;
+  border: none !important;
 }
 
 .square:nth-child(10n + 1){
